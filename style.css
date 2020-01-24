@@ -1,0 +1,144 @@
+body {
+    max-width: 871px;
+    font-family: "franklin-gothic-urw",sans-serif;
+    margin: 0 auto;
+}
+
+.profiles-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.profile {
+    box-sizing: border-box;
+    width: 29%;
+    margin: 15px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.profile:hover {
+    background: #ccc;
+    transition: 0.4s all;
+}
+
+.profile-divider {
+    width: 90%;
+    border-top: 1px solid #ccc;
+}
+
+
+.faded {
+    opacity:0.6;
+}
+
+.lighter {
+    background: #ddd;
+}
+
+.darker {
+    background: #ccc;
+}
+
+
+.details {
+    padding: 5px 15px 10px 15px;
+}
+
+.profile img {
+    max-width: 100%;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 5px 0 0 0;
+}
+
+.title {
+    font-weight: bold;
+     margin: 5px 0 0 0;
+     padding-right: 10px;
+}
+
+.more {
+    float: right;
+    color: #777;
+    font-family: "Arial Black", Gadget, sans-serif;
+    position: absolute;
+    right: 7px;
+    bottom: 5px;
+    font-size: 0.8em;
+}
+
+.bio {
+    display: none;
+    padding: 0 15px 10px 15px;
+   position: absolute;
+    z-index: 1000;
+    font-size: 0.9em;
+    box-shadow: 0 10px 10px -2px white;
+}
+
+.less {
+    text-align: right;
+    color: #777;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+@media only screen and (max-width: 726px) {
+ .profiles-wrapper {
+    justify-content: flex-start;
+}
+
+.profile {
+    width: 47%;
+    margin: 10px;
+}
+
+.profiles-wrapper>.profile:nth-of-type(even) {
+margin: 10px 5px 10px 10px;
+}
+
+}
+
+@media only screen and (max-width: 615px) {
+
+
+.profile {
+    width: 46%;
+}
+}
+
+@media only screen and (max-width: 470px) {
+
+.profile {
+    width: 45%;
+}
+
+}
+
+@media only screen and (max-width: 470px) {
+
+.profiles-wrapper {
+    justify-content: center;
+}
+
+.profile {
+    width: 90%;
+    margin: 15px 0;
+}
+
+.profiles-wrapper>.profile:nth-of-type(even) {
+margin: 15px 0;
+}
+
+.profile-divider {
+    width: 80%;
+}
+
+}
