@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    $(document).mouseup(function(e) 
+    $("html").click(function(e) 
 {
     var container = $(".profile");
 
